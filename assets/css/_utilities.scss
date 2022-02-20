@@ -1,0 +1,129 @@
+body {
+    font-family: var(--ff-openSans);
+    font-size: var(--fs-300);
+    color: var(--clr-catalinaBlue);
+    // padding: 5em 0;
+    // text-align: center;
+
+    // @media (min-width: 50em) {
+    //     background: 
+    //     url(../img/bg-pattern-top-desktop.svg) top left,
+    //     url(../img/bg-pattern-bottom-desktop.svg) bottom right;
+    //     background-size: 50%, 30%;
+    //     background-repeat: no-repeat;
+    // }
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+// .container {
+//     width: 80%;
+//     max-width: 70rem;
+//     // padding: 0 2em;
+//     margin: 0 auto;
+//     display: flex;
+//     // justify-content: space-between;
+//     // align-items: center;
+// }
+
+.flow-content > * + * {
+    margin-top: var(--spacer, 1em);
+}
+
+.double {
+    display: flex;
+    
+}
+
+.double-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-start {
+    justify-content: flex-start;
+}
+
+
+// ------ Typography ------- //
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+//  ------ button & title --- //
+
+.btn {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-100);
+    color: var(--clr-catalinaBlue);
+    border-color: var(--clr-catalinaBlue);;
+    border-radius: 0;
+    margin-top: 2em;
+    padding: .5em 2em;
+    text-transform: uppercase;
+  }
+  
+  .title-container {
+      text-align: center;
+      padding: 2em 0;
+      margin-bottom: 2em;
+      position: relative;
+
+      &::after {
+          position: absolute;
+          content: '';
+          left: 50%;
+          top: 0;
+          width: 100px;
+          height: 1px;
+          background-color: var(--clr-catalinaBlue);
+          transform: translateX(-50%);
+      }
+
+  }
+
+  .title-container--reverse {
+      color: var(--clr-white);
+
+      &::after {
+          background-color: var(--clr-white);
+      }
+
+  }
+  
+  .section-title {
+    font-family: var(--ff-montserrat);
+      font-size: var(--fs-500);
+      font-weight: var(--fw-700);
+      text-align: center;
+  }
+
+
