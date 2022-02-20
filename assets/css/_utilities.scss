@@ -80,6 +80,10 @@ body {
 
 //  ------ button & title --- //
 
+a {
+    transition: all 0.3s ease;
+}
+
 .btn {
     font-family: var(--ff-montserrat);
     font-size: var(--fs-100);

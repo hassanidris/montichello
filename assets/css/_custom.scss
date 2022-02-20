@@ -76,14 +76,27 @@
   &__smlist {
     display: flex;
     justify-content: end;
-
-    &:hover {
-      background-color: var(--clr-white);
-    }
   }
   
   &__smlist > * + * {
     margin-left: .6em;
+  }
+
+  &__smlink {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+    margin: 5px;
+
+    &:hover {
+      color: var(--clr-mediumSlateBlue);
+      background-color: var(--clr-white);
+    }
   }
 }
 
@@ -140,6 +153,17 @@
 
   &__text {
     letter-spacing: 8px;
+  }
+
+  @media screen and (max-width: 991px) {
+    &__title {
+      font-size: var(--fs-500);
+    }
+
+    &__text {
+      letter-spacing: 4px;
+    }
+  
   }
 }
 
