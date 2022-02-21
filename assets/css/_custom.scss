@@ -308,9 +308,9 @@
 
     &__location {
       font-family: var(--ff-openSans);
-      font-size: var(--fs-200);
+      font-size: var(--fs-100);
       font-style: italic;
-      margin-top: 1em;
+      margin-top: 2em;
     }
   }
 }
@@ -318,7 +318,7 @@
 
 .news {
   background: url(../img/bg-news.png) bottom;
-  padding: 6em 0;
+  padding: 4em 0;
   
   &__title {
     font-family: var(--ff-montserrat);
@@ -337,6 +337,10 @@
       font-family: var(--ff-montserrat);
       font-size: var(--fs-400);
       font-weight: var(--fw-700);
+
+      @media screen and (max-width: 991px) {
+        font-size: var(--fs-300);
+      }
     }
   }
 
@@ -394,7 +398,7 @@
 }
 
 .gallery {
-    padding: 6em 0;
+    padding: 4em 0;
 
   // &__image-lg {
   //   height: 450px;
@@ -432,8 +436,9 @@
 
 .footer {
   background: url(../img/bg-footer.png) no-repeat bottom;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   font-family: var(--ff-montserrat);
+  background-size: cover;
   
 
   &__left-up {

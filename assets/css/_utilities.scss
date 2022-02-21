@@ -133,6 +133,7 @@ a {
     font-family: var(--ff-montserrat);
       font-size: var(--fs-500);
       font-weight: var(--fw-700);
+      text-transform: uppercase;
       text-align: center;
 
         @media screen and (max-width: 991px) {
@@ -148,7 +149,7 @@ a {
     display: none;
     z-index: 999;
     color: var(--clr-white);
-    background-color: var(--clr-mediumSlateBlue);
+    background-color: var(--clr-cornflowerBlue);
     border: 0;
 
     &:hover {
