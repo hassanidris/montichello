@@ -58,18 +58,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0 uppercase">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#projects">
                   <i class="icon"></i> projects</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="icon"></i> news</a>
+                <a class="nav-link" href="#news"> <i class="icon"></i> news</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="icon"></i> Gallery</a>
+                <a class="nav-link" href="#gallery">
+                  <i class="icon"></i> Gallery</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="icon"></i> Contact</a>
+                <a class="nav-link" href="#map">
+                  <i class="icon"></i> Contact</a
+                >
               </li>
             </ul>
             <ul class="nav__smlist">
@@ -100,18 +104,18 @@
               <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
             </div>
             <div class="banner text-center">
-              <h1 class="banner__title">SIMPLE & MODERN2</h1>
-              <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+              <h1 class="banner__title">managable & classic</h1>
+              <p class="banner__text">We let you feel "just like home"</p>
             </div>
             <div class="banner text-center">
-              <h1 class="banner__title">SIMPLE & MODERN3</h1>
-              <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+              <h1 class="banner__title">hard & luxuary</h1>
+              <p class="banner__text">WE MAKE your dreams come through</p>
             </div>
           </div>
         </div>
       </header>
 
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="title-container">
           <h2 class="section-title">projects</h2>
         </div>
@@ -183,7 +187,7 @@
         </div>
       </section>
 
-      <section class="news">
+      <section id="news" class="news">
         <div class="container">
           <div class="title-container title-container--reverse">
             <h2 class="section-title">Latest News</h2>
@@ -300,7 +304,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <div class="title-container">
           <h2 class="section-title">Gallery</h2>
         </div>
@@ -381,25 +385,34 @@
                       <i class="fas fa-clock"></i>From 07:05AM to 19:30PM
                     </p>
                   </div>
-                  <div class="col">
-                    <input
-                      type="email"
-                      class="form-control mb-3 active"
-                      id="exampleFormControlInput1"
-                      placeholder="Mollie Medina"
-                    />
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="Email"
-                    />
+                  <form class="col needs-validation">
+                    <div class="form-name">
+                      <input
+                        type="text"
+                        class="form-control mb-3 active"
+                        id="validationCustom01"
+                        placeholder="Enter name ..."
+                        required
+                      />
+                      <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="form-email">
+                      <input
+                        type="email"
+                        class="form-control mb-3 active"
+                        id="validationCustom01"
+                        placeholder="Enter email ..."
+                        required
+                      />
+                      <div class="valid-feedback">Looks good!</div>
+                    </div>
+
                     <div class="text-end">
                       <button type="submit" class="btn btn-outline-primary">
                         Submit
                       </button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
               <div class="footer__secondray">
@@ -459,7 +472,7 @@
     <script src="./assets/js/slick.js"></script>
     <script src="./assets/js/slick.min.js"></script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function () {
         $(".news-slider").slick({
           slidesToShow: 3,
@@ -499,6 +512,6 @@
           autoplaySpeed: 3000,
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>

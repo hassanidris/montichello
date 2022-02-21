@@ -196,9 +196,15 @@ a {
   font-weight: var(--fw-700);
   text-align: center;
 }
+@media screen and (max-width: 991px) {
+  .section-title {
+    font-size: var(--fs-400);
+  }
+}
 
 .header {
   background: url(../img/bg-bnr.png) bottom;
+  background-attachment: fixed;
   min-height: 100vh;
   padding-top: 100px;
   display: flex;
@@ -321,16 +327,20 @@ a {
   font-weight: var(--fw-700);
   letter-spacing: 5px;
   margin-bottom: 0.25em;
+  text-transform: uppercase;
 }
 .banner__text {
   letter-spacing: 8px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 991px) {
   .banner__title {
     font-size: var(--fs-500);
+    text-transform: uppercase;
   }
   .banner__text {
     letter-spacing: 4px;
+    text-transform: uppercase;
   }
 }
 
@@ -359,6 +369,17 @@ a {
 .projects__content.project-secondray::after {
   right: 0;
   left: auto;
+}
+@media screen and (max-width: 991px) {
+  .projects__content.project-secondray::after {
+    bottom: 10px;
+    top: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .projects__content.project-secondray {
+    margin-top: 30px;
+  }
 }
 .projects .project__image {
   height: 470px;
@@ -486,7 +507,8 @@ a {
 }
 
 .footer {
-  background: url(../img/bg-footer.png) bottom;
+  background: url(../img/bg-footer.png) no-repeat bottom;
+  background-attachment: fixed;
   font-family: var(--ff-montserrat);
 }
 .footer__left-up {
@@ -506,18 +528,21 @@ a {
 }
 .footer .contact-box {
   padding: 4em;
-  background: url(../img/bg-contact.png) bottom;
+  background: url(../img/bg-contact.png) no-repeat bottom;
 }
-.footer .contact-box__title {
-  font-family: var(--ff-montserrat);
-  font-size: var(--fs-500);
-  font-weight: var(--fw-700);
-  color: var(--clr-catalinaBlue);
-  text-align: center;
+@media screen and (max-width: 991px) {
+  .footer .contact-box {
+    padding: 3em;
+  }
 }
 .footer .contact-box__address {
   font-size: var(--fs-200);
   margin-bottom: 1.8em;
+}
+@media screen and (max-width: 991px) {
+  .footer .contact-box__address {
+    margin-bottom: 1em;
+  }
 }
 .footer .contact-box__address i {
   color: var(--clr-mediumSlateBlue);

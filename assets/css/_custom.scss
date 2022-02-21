@@ -2,6 +2,7 @@
 
 .header {
   background: url(../img/bg-bnr.png) bottom;
+  background-attachment: fixed;
   min-height: 100vh;
   padding-top: 100px;
   display: flex;
@@ -149,19 +150,23 @@
     font-weight: var(--fw-700);
     letter-spacing: 5px;
     margin-bottom: .25em;
+    text-transform: uppercase;
   }
 
   &__text {
     letter-spacing: 8px;
+    text-transform: uppercase;
   }
 
   @media screen and (max-width: 991px) {
     &__title {
       font-size: var(--fs-500);
+      text-transform: uppercase;
     }
 
     &__text {
       letter-spacing: 4px;
+      text-transform: uppercase;
     }
   
   }
@@ -198,6 +203,14 @@
       &::after {
         right: 0;
         left: auto;
+
+        @media screen and (max-width: 991px) {
+          bottom: 10px;
+          top: auto;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        margin-top: 30px;
       }
     }
   }  
@@ -237,7 +250,7 @@
       font-style: italic;
       margin-top: 3em;
     }
-}
+  }
 }
 
 
@@ -356,18 +369,12 @@
 }
 
 .footer {
-  background: url(../img/bg-footer.png) bottom;
+  background: url(../img/bg-footer.png) no-repeat bottom;
+  background-attachment: fixed;
   font-family: var(--ff-montserrat);
-  // padding-bottom: 6em;
-
-  // &__container {
-  //   width: 60%;
-  //   max-width: 50rem;
-    
-  // }
+  
 
   &__left-up {
-    // margin-top: -200px;
     transform: translateY(-50%);
     position: relative;
     z-index: 5;
@@ -376,12 +383,6 @@
   &__details {
     width: 100%;
   }
-
-  // &__links {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
 
   &__logo {
     width: 9em;
@@ -394,21 +395,32 @@
   }
   .contact-box {
     padding: 4em;
-    background: url(../img/bg-contact.png) bottom;
+    // background-color: var(--clr-white);
+    background: url(../img/bg-contact.png) no-repeat bottom;
+
+    @media screen and (max-width: 991px) {
+      padding: 3em;
+  
+    }
     
 
-    &__title {
-      font-family: var(--ff-montserrat);
-      font-size: var(--fs-500);
-      font-weight: var(--fw-700);
-      color: var(--clr-catalinaBlue);
-      text-align: center;
-      // margin-bottom: 2.5em;
-    }
+    // &__title {
+    //   font-family: var(--ff-montserrat);
+    //   font-size: var(--fs-500);
+    //   font-weight: var(--fw-700);
+    //   color: var(--clr-catalinaBlue);
+    //   text-align: center;
+    //   // margin-bottom: 2.5em;
+    // }
 
     &__address {
         font-size: var(--fs-200);
         margin-bottom: 1.8em;
+
+        @media screen and (max-width: 991px) {
+          margin-bottom: 1em;
+  
+        }
 
       i {
         color: var(--clr-mediumSlateBlue);

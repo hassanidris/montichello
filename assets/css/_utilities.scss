@@ -112,6 +112,12 @@ a {
           transform: translateX(-50%);
       }
 
+    //   @media screen and (max-width: 991px) {
+    //    padding: .7em 0;
+    //    margin-bottom: 1em;
+      
+    //   }
+
   }
 
   .title-container--reverse {
@@ -128,6 +134,11 @@ a {
       font-size: var(--fs-500);
       font-weight: var(--fw-700);
       text-align: center;
+
+        @media screen and (max-width: 991px) {
+            font-size: var(--fs-400);
+      
+      }
   }
 
 

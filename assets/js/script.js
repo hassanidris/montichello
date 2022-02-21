@@ -23,3 +23,59 @@ function initMap() {
         map: map,
       });
     }
+
+    // Smooth scrolling
+    const links = document.querySelectorAll(".nav-link");
+
+      for (const link of links) {
+        link.addEventListener("click", clickHandler);
+      }
+
+      function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+
+        document.querySelector(href).scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+
+      // Slick slider code
+      $(document).ready(function () {
+        $(".news-slider").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          dots: true,
+          autoplaySpeed: 1000,
+
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+   
+
+    $(document).ready(function () {
+        $(".banner-slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // autoplay: true,
+          dots: true,
+          arrows: false,
+          autoplaySpeed: 3000,
+        });
+      });
