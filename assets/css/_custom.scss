@@ -18,12 +18,6 @@
 
   }
 
-    // custom styling for slider
-
-  // .slick-dots {
-  //   bottom: -50px;
-  // }
-
   .slick-dots {
     width: 20px;
     right: 20px;
@@ -111,8 +105,6 @@
     border-radius: 50%;
     display: inline-block;
     text-align: center;
-    // align-items: center;
-    // justify-content: center;
     color: var(--clr-white);
     margin: 5px;
 
@@ -226,7 +218,6 @@
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  // align-items: center;
 
   @media screen and (max-width: 991px) {
     padding: 4em 0;
@@ -253,12 +244,6 @@
       width: 35%;
       height: 470px;
       background-color: var(--clr-mediumSlateBlue);
-
-      // @media screen and (max-width: 991px) {
-      //   top: 40px;
-      // }
-
-      
     }
 
     &.project-secondray {
@@ -304,7 +289,6 @@
     &__desc {
       margin-top: 1.5em;
     }
-
 
     &__location {
       font-family: var(--ff-openSans);
@@ -399,32 +383,6 @@
 
 .gallery {
     padding: 4em 0;
-
-  // &__image-lg {
-  //   height: 450px;
-
-  //   img {
-  //     object-fit: cover;
-  //     width: 100%;
-  //     height: 100%;
-  //   }
-  // } 
-
-  // &__image-sm {
-  //   height: 450px;
-  //   // padding-right: 10px;
-
-  //   img {
-  //     object-fit: cover;
-  //     width: 100%;
-  //     height: 220px;
-
-  //     &:first-of-type {
-  //       margin-bottom: 10px;
-  //     }
-  //   }
-  // } 
-
 }
 
 #map {
@@ -477,13 +435,11 @@
   }
   .contact-box {
     padding: 4em;
-    // background-color: var(--clr-white);
     background: url(../img/bg-contact.png) no-repeat bottom;
     background-size: cover;
 
     @media screen and (max-width: 991px) {
       padding: 3em;
-  
     }
   
 
@@ -510,8 +466,3 @@
     }
   }
 }
-
-
-// @media screen and (max-width: 991px) {
-  
-// }
