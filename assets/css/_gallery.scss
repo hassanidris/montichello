@@ -1,0 +1,33 @@
+
+.gallery-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  
+  .gallery-item {
+    aspect-ratio: 1 / 1;
+    /* border: 3px solid hotpink; */
+  }
+  
+  
+  .gallery-item__img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  @media (min-width: 60em) {
+    .gallery-item__img {
+      aspect-ratio: 1 / 1;
+    }
+  
+    .gallery-item.featured {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+  
+    .gallery-item.featured .gallery-item__img {
+      aspect-ratio: 1 / 1;
+    }
+  }
