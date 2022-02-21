@@ -97,8 +97,8 @@ a {
   
   .title-container {
       text-align: center;
-      padding: 2em 0;
-      margin-bottom: 2em;
+      padding: 1.5em 0;
+      margin-bottom: 1.5em;
       position: relative;
 
       &::after {
@@ -136,9 +136,24 @@ a {
       text-align: center;
 
         @media screen and (max-width: 991px) {
-            font-size: var(--fs-400);
+            font-size: var(--fs-500);
       
       }
+  }
+
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+    color: var(--clr-white);
+    background-color: var(--clr-mediumSlateBlue);
+    border: 0;
+
+    &:hover {
+        background-color: var(--clr-catalinaBlue);
+    }
   }
 
 

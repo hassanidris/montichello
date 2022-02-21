@@ -39,77 +39,85 @@
   </head>
   <body>
     <div class="wrapper">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="./assets/img/Logo.svg" alt="Montichello Logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0 uppercase">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#projects">
-                  <i class="icon"></i> projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#news"> <i class="icon"></i> news</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">
-                  <i class="icon"></i> Gallery</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#map">
-                  <i class="icon"></i> Contact</a
-                >
-              </li>
-            </ul>
-            <ul class="nav__smlist">
-              <li class="nav__smitem">
-                <a href="#" class="nav__smlink"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="nav__smitem">
-                <a href="#" class="nav__smlink"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li class="nav__smitem">
-                <a href="#" class="nav__smlink"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
       <header class="header">
-        <div class="container-fluid">
-          <div class="banner-slider">
-            <div class="banner text-center">
-              <h1 class="banner__title">SIMPLE & MODERN</h1>
-              <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/img/Logo.svg" alt="Montichello Logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0 uppercase">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#projects"
+                  >
+                    <i class="icon"></i> projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#news">
+                    <i class="icon"></i> news</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">
+                    <i class="icon"></i> Gallery</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#map">
+                    <i class="icon"></i> Contact</a
+                  >
+                </li>
+              </ul>
+              <ul class="nav__smlist">
+                <li class="nav__smitem">
+                  <a href="#" class="nav__smlink"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="nav__smitem">
+                  <a href="#" class="nav__smlink"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="nav__smitem">
+                  <a href="#" class="nav__smlink"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
-            <div class="banner text-center">
-              <h1 class="banner__title">managable & classic</h1>
-              <p class="banner__text">We let you feel "just like home"</p>
-            </div>
-            <div class="banner text-center">
-              <h1 class="banner__title">hard & luxuary</h1>
-              <p class="banner__text">WE MAKE your dreams come through</p>
+          </div>
+        </nav>
+        <div class="header-content">
+          <div class="container-fluid">
+            <div class="banner-slider">
+              <div class="banner text-center">
+                <h1 class="banner__title">SIMPLE & MODERN</h1>
+                <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+              </div>
+              <div class="banner text-center">
+                <h1 class="banner__title">managable & classic</h1>
+                <p class="banner__text">We let you feel "just like home"</p>
+              </div>
+              <div class="banner text-center">
+                <h1 class="banner__title">hard & luxuary</h1>
+                <p class="banner__text">WE MAKE your dreams come through</p>
+              </div>
             </div>
           </div>
         </div>
@@ -119,7 +127,7 @@
         <div class="title-container">
           <h2 class="section-title">projects</h2>
         </div>
-        <div class="projects__content mb-5 pb-5">
+        <div class="projects__content mb-5 pb-lg-5">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-7">
@@ -156,6 +164,16 @@
         <div class="projects__content project-secondray">
           <div class="container">
             <div class="row align-items-center">
+              <div class="col-md-7 order-lg-last">
+                <div class="project__image">
+                  <img
+                    src="./assets/img/proj-commerce.png"
+                    alt="TRADE CENTER"
+                    class="image"
+                  />
+                </div>
+              </div>
+
               <div class="col-md-5">
                 <div class="project__details">
                   <h3 class="project__state">INTERNATIONAL</h3>
@@ -171,15 +189,6 @@
                   <p class="project__location">
                     <i class="fas fa-map-marker-alt"></i> Hong Kong - 1588 feet
                   </p>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <div class="project__image">
-                  <img
-                    src="./assets/img/proj-commerce.png"
-                    alt="TRADE CENTER"
-                    class="image"
-                  />
                 </div>
               </div>
             </div>
@@ -407,7 +416,7 @@
                       <div class="valid-feedback">Looks good!</div>
                     </div>
 
-                    <div class="text-end">
+                    <div class="text-lg-end text-center">
                       <button type="submit" class="btn btn-outline-primary">
                         Submit
                       </button>
@@ -452,6 +461,13 @@
           </div>
         </div>
       </footer>
+      <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+      >
+        <i class="fas fa-arrow-up"></i>
+      </button>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
