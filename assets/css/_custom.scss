@@ -1,7 +1,7 @@
 
 
 .header {
-  background: url(../img/bg-bnr.png) no-repeat bottom;
+  background: url(../img/bg-bnr.webp) no-repeat bottom;
   background-size: cover;
   background-attachment: fixed;
   
@@ -302,7 +302,7 @@
 
 
 .news {
-  background: url(../img/bg-news.png) bottom;
+  background: url(../img/bg-news.webp) bottom;
   padding: 4em 0;
   
   &__title {
@@ -394,7 +394,7 @@
 }
 
 .footer {
-  background: url(../img/bg-footer.png) no-repeat bottom;
+  background: url(../img/bg-footer.webp) no-repeat bottom;
   // background-attachment: fixed;
   font-family: var(--ff-montserrat);
   background-size: cover;
@@ -436,7 +436,7 @@
   }
   .contact-box {
     padding: 4em;
-    background: url(../img/bg-contact.png) no-repeat bottom;
+    background: url(../img/bg-contact.webp) no-repeat bottom;
     background-size: cover;
 
     @media screen and (max-width: 991px) {
