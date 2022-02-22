@@ -1,7 +1,8 @@
 
 
 .header {
-  background: url(../img/bg-bnr.png) bottom;
+  background: url(../img/bg-bnr.png) no-repeat bottom;
+  background-size: cover;
   background-attachment: fixed;
   
   .header-content {
