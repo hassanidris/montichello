@@ -76,7 +76,9 @@ function initMap() {
           autoplay: true,
           dots: true,
           arrows: false,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 2500,
+          cssEase: 'ease-out',
+          fade: true,
         });
       });
 
