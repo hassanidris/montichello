@@ -77,8 +77,9 @@ function initMap() {
           dots: true,
           arrows: false,
           autoplaySpeed: 2500,
-          cssEase: 'ease-out',
+          // cssEase: 'ease-out',
           fade: true,
+          easing: 'linear',
         });
       });
 
