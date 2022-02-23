@@ -73,10 +73,10 @@ function initMap() {
         $(".banner-slider").slick({
           slidesToShow: 1,
           slidesToScroll: 1,
-          // autoplay: true,
+          autoplay: true,
           dots: true,
           arrows: false,
-          autoplaySpeed: 3000,
+          autoplaySpeed: 2000,
         });
       });
 

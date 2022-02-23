@@ -1,4 +1,4 @@
-# montichello
+# Montichello
 
 ## Table of contents
 
@@ -36,13 +36,12 @@
 - Smooth Scrolling with JS
 - Slick Slider JS
 
-
 ### What I learned
 
 - CSS Variables
 
 ```scss
---clr-catalinaBlue: hsl(213,	33%,	26%);
+--clr-catalinaBlue: hsl(213, 33%, 26%);
 --clr-white: hsl(0, 0%, 100%);
 ```
 
@@ -50,14 +49,14 @@
 
 ```scss
 .card-title {
-      font-family: var(--ff-montserrat);
-      font-size: var(--fs-400);
-      font-weight: var(--fw-700);
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
 
-      @media screen and (max-width: 991px) {
-        font-size: var(--fs-300);
-      }
-    }
+  @media screen and (max-width: 991px) {
+    font-size: var(--fs-300);
+  }
+}
 ```
 
 ## Author
