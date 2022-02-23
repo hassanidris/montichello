@@ -951,7 +951,7 @@ a {
   position: relative;
   font-family: var(--ff-montserrat);
   font-weight: var(--fw-700);
-  font-size: var(--fs-500);
+  font-size: 34px;
   background-color: transparent;
   color: #FFF;
   padding: 1em 0;
