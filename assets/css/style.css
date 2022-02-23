@@ -219,7 +219,8 @@ a {
 }
 
 .header {
-  background: url(../img/bg-bnr.webp) bottom;
+  background: url(../img/bg-bnr.webp) no-repeat bottom;
+  background-size: cover;
   background-attachment: fixed;
 }
 .header .header-content {
@@ -920,7 +921,7 @@ a {
   -webkit-transform: scale(0, 1);
   -ms-transform: scale(0, 1);
   transform: scale(0, 1);
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .hovereffect:hover .overlay {
@@ -964,7 +965,7 @@ a {
 
 .hovereffect a, .hovereffect p {
   color: #FFF;
-  padding: 1em 0;
+  padding: 0.7em 0;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
